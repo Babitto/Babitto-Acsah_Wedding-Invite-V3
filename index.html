@@ -12,11 +12,11 @@
   <meta property="og:site_name" content="Babitto &amp; Acsah Wedding">
   <meta property="og:title" content="Babitto &amp; Acsah - Wedding Reception Invitation">
   
-  <meta property="og:url" content="https://babittoacsahweddinginvitev2.vercel.app/">
+  <meta property="og:url" content="https://babittoacsahweddingreceptioninvitat.vercel.app/">
 
   <!-- Preview image: must be publicly accessible -->
-  <meta property="og:image" content="https://babittoacsahweddinginvitev2.vercel.app/og-image.png">
-  <meta property="og:image:secure_url" content="https://babittoacsahweddinginvitev2.vercel.app/og-image.png">
+  <meta property="og:image" content="https://babittoacsahweddingreceptioninvitat.vercel.app/og-couple-2026.jpg">
+  <meta property="og:image:secure_url" content="https://babittoacsahweddingreceptioninvitat.vercel.app/og-couple-2026.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -25,7 +25,7 @@
   <!-- Twitter / other social previews -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Babitto &amp; Acsah - Wedding Reception Invitation">
-  <meta name="twitter:image" content="https://babittoacsahweddinginvitev2.vercel.app/og-image.png">
+  <meta name="twitter:image" content="https://babittoacsahweddingreceptioninvitat.vercel.app/og-couple-2026.jpg">
   <meta name="twitter:image:alt" content="Babitto &amp; Acsah - Wedding Reception Invitation">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,7 +116,8 @@
     .divider svg { width: 28px; height: 28px; flex: none; }
 
     /* ---------- Hero ---------- */
-    .hero { padding: 0.5rem 1.25rem 3.5rem; overflow-x: clip; }
+    .hero { padding: 0 1.25rem 3rem; overflow-x: clip; }
+    .hero .container { margin-top: -1.75rem; position: relative; text-align: center; }
 
     .verse { max-width: 25rem; margin: 0 auto; }
     .verse p {
@@ -140,7 +141,7 @@
       font-weight: 400;
       font-size: clamp(1.35rem, 5.2vw, 1.7rem);
       color: var(--text);
-      margin: 2.25rem 0 0.5rem;
+      margin: 1.5rem 0 0.25rem;
     }
 
     .names-wrap { position: relative; isolation: isolate; padding: 0.5rem 0 1rem; }
@@ -173,7 +174,7 @@
       margin: 0.1rem 0;
     }
 
-    .datebox { max-width: 26rem; margin: 1.5rem auto 0; color: var(--ink); }
+    .datebox { max-width: 26rem; margin: 1rem auto 0; color: var(--ink); }
     .datebox .month {
       font-family: var(--sans);
       font-weight: 400;
@@ -197,8 +198,8 @@
       text-transform: uppercase;
       line-height: 1.3;
     }
-    .datebox .day { text-align: right; }
-    .datebox .time { text-align: left; }
+    .datebox .day { text-align: right; margin-right: -0.14em; }
+    .datebox .time { text-align: left; padding-left: 0; }
     .datebox .num {
       font-family: var(--sans);
       font-weight: 300;
@@ -218,7 +219,7 @@
       padding-left: 0.3em;
     }
 
-    .portrait { width: min(90vw, 380px); margin: 2.5rem auto 0; }
+    .portrait { width: min(90vw, 380px); margin: 1.75rem auto 0; }
     .portrait img { display: block; width: 100%; height: auto; }
 
     /* ---------- Countdown ---------- */
@@ -425,6 +426,7 @@
 
     /* ---------- Larger screens ---------- */
     @media (min-width: 720px) {
+      .hero .container { margin-top: -6rem; }
       section { padding: 5.5rem 2rem; }
       .couple-grid { grid-template-columns: 1fr auto 1fr; gap: 1.25rem; }
       .events { grid-template-columns: minmax(0, 620px); justify-content: center; align-items: stretch; width: 100%; margin-inline: auto; }
